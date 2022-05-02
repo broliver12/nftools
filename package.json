@@ -1,0 +1,19 @@
+{
+  "name": "nftools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generateImages.js",
+  "scripts": {
+    "build": "node ./art_generator/generateImages.js",
+    "data:batch": "node ./art_generator/createBatchMetadata.js",
+    "data:update": "node ./art_generator/addImagesToMetadata.js",
+    "format:addresses": "node ./address_list_formatter/formatAddressCsv.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Straszynski",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "web3-utils": "^1.7.0"
+  }
+}

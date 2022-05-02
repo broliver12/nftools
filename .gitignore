@@ -1,0 +1,5 @@
+/art_generator/build
+/art_generator/traits
+/build_save
+/node_modules
+package-lock.json
