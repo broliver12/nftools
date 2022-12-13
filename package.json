@@ -1,19 +1,13 @@
 {
   "name": "nftools",
   "version": "1.0.0",
-  "description": "",
-  "main": "generateImages.js",
+  "description": "A suite of tools that help automate the process of creating a generative NFT collection.",
   "scripts": {
-    "build": "node ./art_generator/generateImages.js",
-    "data:batch": "node ./art_generator/createBatchMetadata.js",
-    "data:update": "node ./art_generator/addImagesToMetadata.js",
-    "format:addresses": "node ./address_list_formatter/formatAddressCsv.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oliver Straszynski",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^2.8.0",
-    "web3-utils": "^1.7.0"
+    "canvas": "^2.8.0"
   }
 }
