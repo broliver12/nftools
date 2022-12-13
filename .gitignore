@@ -1,5 +1,15 @@
-/art_generator/build
-/art_generator/traits
-/build_save
+# Output
+/generate_images/output/metadata
+/generate_images/output/images
+/generate_images/backup
+/create_mock_metadata/output
+/edit_image_attributes/metadata
+/format_address_list/output.csv
+/rename_images/images
+
+# Node
 /node_modules
 package-lock.json
+
+# This is just a failsafe so we're not comitting art to public git
+*.png

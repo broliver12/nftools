@@ -1,6 +1,6 @@
 //import filesync for interacting with file system
 const fs = require("fs");
-const { saveData } = require("./config.js");
+const { saveData } = require("./config.js.js");
 const myArgs = process.argv.slice(2);
 const start = myArgs.length > 0 ? Number(myArgs[0]) : undefined;
 const end = myArgs.length > 1 ? Number(myArgs[1]) : undefined;
@@ -12,7 +12,7 @@ const data = {
 
 (() => {
     if(start === undefined || end === undefined || url === undefined){
-      console.log("Illegal arguments - Use: npm run batch <start> <end> <url>")
+      console.log("Illegal arguments - Use: node_create_mock_metadata <start> <end> <url>")
       process.exit(1)
     }
     if(start <0 || end <= start) {
