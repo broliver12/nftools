@@ -11,6 +11,7 @@ const {
   backupDirectory,
   metadataOutputDirectory,
   imageOutputDirectory,
+  reportOutputDirectory,
   idMapOutputFile,
   traitPercentOutputFile,
   traitOccurenceOutputFile,
@@ -41,6 +42,11 @@ ctx.imageSmoothingEnabled = true;
 
 const buildSetup = () => {
   // Clear image directory
+  if (fs.existsSync(outputDirectory)) {
+    fs.rmSync(outputDirectory, { recursive: true });
+  }
+  fs.mkdirSync(outputDirectory);
+  // Clear image directory
   if (fs.existsSync(imageOutputDirectory)) {
     fs.rmSync(imageOutputDirectory, { recursive: true });
   }
@@ -50,6 +56,11 @@ const buildSetup = () => {
     fs.rmSync(metadataOutputDirectory, { recursive: true });
   }
   fs.mkdirSync(metadataOutputDirectory);
+  // Clear report directory
+  if (fs.existsSync(reportOutputDirectory)) {
+    fs.rmSync(reportOutputDirectory, { recursive: true });
+  }
+  fs.mkdirSync(reportOutputDirectory);
 };
 
 // Map trait data from `config.js`, add

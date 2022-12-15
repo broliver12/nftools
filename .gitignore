@@ -2,7 +2,8 @@
 /generate_images/output
 /generate_images/backup
 /format_address_list/output.csv
-/create_mock_metadata
+/format_address_list/report.json
+/create_mock_metadata/output
 
 # Node
 /node_modules

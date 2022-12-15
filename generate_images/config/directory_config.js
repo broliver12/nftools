@@ -25,6 +25,7 @@ module.exports = {
     backupDirectory,
     metadataOutputDirectory,
     imageOutputDirectory,
+    reportOutputDirectory,
     idMapOutputFile,
     traitPercentOutputFile,
     traitOccurenceOutputFile,
